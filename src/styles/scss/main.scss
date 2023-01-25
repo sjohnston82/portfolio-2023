@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&family=Noto+Sans:ital@1&family=Roboto+Slab:wght@100;400;600;700;800;900&family=Titillium+Web:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./landing";
+@import "./skills";
+@import "./projects";
+
+@font-face {
+  font-family: "Revue";
+  src: url("../assets/fonts/reve.woff") format("woff2"),
+    url("../assets/fonts/reve.woff") format("woff");
+}
+
+.yahtzee-bg {
+  background: radial-gradient(orange 10%, red 90%, darkred 100%);
+}
+
+.test {
+  left: 0;
+  right: 0;
+}
