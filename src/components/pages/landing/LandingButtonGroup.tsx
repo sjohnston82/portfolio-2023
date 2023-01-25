@@ -16,7 +16,7 @@ const LandingButtonGroup = () => {
           Resumé
         </button>
       </a>
-      <SocialMediaButtonGroup />
+      <SocialMediaButtonGroup isFooter={false} />
       
     </div>
   );

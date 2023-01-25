@@ -1,17 +1,17 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { PortfolioContext } from "../../context/PortfolioContext";
 import SocialMediaButtonGroup from "./SocialMediaButtonGroup";
 
 const Footer = () => {
   const context = useContext(PortfolioContext);
   if (!context) return null;
-  const { project, setProject } = context;
+  const { setProject } = context;
 
   let footerClasses: string = "w-full p-1 text-gray-500 z-0 bg-gray-800";
 
   return (
     <footer className={footerClasses}>
-      <SocialMediaButtonGroup />
+      <SocialMediaButtonGroup isFooter={true} />
       <p className="text-center text-sm ">
         © Stephen Johnston, 2023. All Rights Reserved.
       </p>
