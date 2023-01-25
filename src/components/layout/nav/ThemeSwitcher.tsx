@@ -17,14 +17,12 @@ const ThemeSwitcher = () => {
     <div className="absolute top-4 left-4">
       {darkMode ? (
         <MdOutlineLightMode
-          className="cursor-pointer"
-          size="2rem"
+          className="cursor-pointer text-[2rem] md:text-[2.5rem]"
           onClick={toggleDarkMode}
         />
       ) : (
         <MdOutlineNightlight
-          className="cursor-pointer"
-          size="2rem"
+          className="cursor-pointer text-[2rem] md:text-[2.5rem]"
           onClick={toggleDarkMode}
         />
       )}
