@@ -53,7 +53,6 @@ const PortfolioContextProvider = ({ children }: ChildrenProps) => {
 
   function toggleOpen() {
     setIsOpen((prevState) => !prevState);
-    console.log("toggled");
   }
 
   useEffect(() => {

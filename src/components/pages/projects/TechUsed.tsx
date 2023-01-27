@@ -73,7 +73,7 @@ const TechUsed = () => {
           duration: 0.5,
           y: { type: "spring", stiffness: 300, damping: 30 },
         }}
-        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 "
+        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-6 md:gap-5"
       >
         {project === 1
           ? techListJobTracker.map((tech) => {

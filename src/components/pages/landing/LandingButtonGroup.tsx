@@ -12,12 +12,11 @@ const LandingButtonGroup = () => {
         rel="noopener noreferrer"
         className="w-1/2"
       >
-        <button className="duration-400 w-full rounded-3xl border-2 bg-celticblue p-3 text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue ">
+        <button className="duration-400 z-50 w-full rounded-3xl border-2 bg-celticblue p-3 text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue ">
           Resumé
         </button>
       </a>
       <SocialMediaButtonGroup isFooter={false} />
-      
     </div>
   );
 };

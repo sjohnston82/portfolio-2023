@@ -44,7 +44,7 @@ const NavList = () => {
           variants={itemVariants}
           title="Home"
           icon={
-            <AiFillHome size="1.3rem" className="group-hover:fill-celticblue" />
+            <AiFillHome  className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]" />
           }
           link="#home"
         />
@@ -52,7 +52,7 @@ const NavList = () => {
           variants={itemVariants}
           title="Skills"
           icon={
-            <FaTools size="1.3rem" className="group-hover:fill-celticblue" />
+            <FaTools  className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]" />
           }
           link="#skills"
         />
@@ -60,17 +60,17 @@ const NavList = () => {
           variants={itemVariants}
           title="Projects"
           icon={
-            <HiCode size="1.5rem" className="group-hover:fill-celticblue" />
+            <HiCode  className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]" />
           }
           link="#projects"
         />
         <NavLink
           variants={itemVariants}
-          title="Home"
+          title="Contact"
           icon={
             <AiFillPhone
-              size="1.3rem"
-              className="group-hover:fill-celticblue"
+              
+              className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]"
             />
           }
           link="#contact"

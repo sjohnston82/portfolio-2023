@@ -23,9 +23,9 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
   return (
     <>
       <div className="relative z-30 m-auto w-full overflow-hidden  rounded font-ibmplexsans font-semibold italic dark:bg-gray-900">
-        <div className="absolute top-0 left-4 z-0  h-40 w-40 animate-blob rounded-full bg-purple-300 dark:bg-purple-900 opacity-70 dark:opacity-40 mix-blend-multiply blur-2xl filter "></div>
-        <div className="absolute top-0 right-4 z-0  h-40 w-40 animate-blob rounded-full bg-yellow-300 dark:bg-black opacity-50 dark:opacity-40 mix-blend-multiply blur-2xl filter animation-delay-400"></div>
-        <div className="absolute bottom-0 left-28 z-0  h-40 w-40 animate-blob rounded-full bg-blue-300 dark:bg-red-900 opacity-70 dark:opacity-40 mix-blend-multiply blur-2xl filter animation-delay-1200 "></div>
+        <div className="absolute top-0 left-4 z-0  h-40 w-40 animate-blob rounded-full bg-purple-300 opacity-70 mix-blend-multiply blur-2xl filter dark:bg-purple-900 dark:opacity-40 "></div>
+        <div className="absolute top-0 right-4 z-0  h-40 w-40 animate-blob rounded-full bg-yellow-300 opacity-50 mix-blend-multiply blur-2xl filter animation-delay-400 dark:bg-black dark:opacity-40"></div>
+        <div className="absolute bottom-0 left-28 z-0  h-40 w-40 animate-blob rounded-full bg-blue-300 opacity-70 mix-blend-multiply blur-2xl filter animation-delay-1200 dark:bg-red-900 dark:opacity-40 "></div>
         <div className="mx-1 mb-1 h-full rounded-b bg-stone-50 pt-1 dark:bg-gray-800">
           <AnimatePresence mode="wait" initial={false}>
             {category === "languages" && (
@@ -36,8 +36,12 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
                 exit={{ scale: 0, opacity: 0 }}
                 className={skillContainerClasses}
               >
-                {allLanguages.map((skill) => (
-                  <TechBadge image={skill.image} title={skill.title} />
+                {allLanguages.map((skill, idx) => (
+                  <TechBadge
+                    image={skill.image}
+                    title={skill.title}
+                    key={idx}
+                  />
                 ))}
               </motion.div>
             )}
@@ -50,8 +54,12 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
                 exit={{ scale: 0, opacity: 0 }}
                 className={skillContainerClasses}
               >
-                {allFrontEnd.map((skill) => (
-                  <TechBadge image={skill.image} title={skill.title} />
+                {allFrontEnd.map((skill, idx) => (
+                  <TechBadge
+                    image={skill.image}
+                    title={skill.title}
+                    key={idx}
+                  />
                 ))}
               </motion.div>
             )}
@@ -64,8 +72,12 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
                 exit={{ scale: 0, opacity: 0 }}
                 className={skillContainerClasses}
               >
-                {allBackEnd.map((skill) => (
-                  <TechBadge image={skill.image} title={skill.title} />
+                {allBackEnd.map((skill, idx) => (
+                  <TechBadge
+                    image={skill.image}
+                    title={skill.title}
+                    key={idx}
+                  />
                 ))}
               </motion.div>
             )}
@@ -78,11 +90,12 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
                 exit={{ scale: 0, opacity: 0 }}
                 className={skillContainerClasses}
               >
-                {allMiscSkills.map((skill) => (
+                {allMiscSkills.map((skill, idx) => (
                   <TechBadge
                     image={skill.image}
                     title={skill.title}
                     smallText={skill.smallText}
+                    key={idx}
                   />
                 ))}
               </motion.div>

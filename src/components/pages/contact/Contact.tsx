@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 
-
-
 const Contact = () => {
   return (
     <div className="relative bg-gray-800 pb-20 ">
@@ -22,19 +20,19 @@ const Contact = () => {
       </div>
 
       <div className="relative z-0 m-auto mt-28 w-[90%]  p-12">
-        <motion.div className="relative z-50 m-auto text-center font-ibmplexsans text-5xl text-white w-[90%] xxs:w-3/4 xs:w-2/3">
+        <motion.div className="relative z-50 m-auto w-[90%] text-center font-ibmplexsans text-5xl text-white xxs:w-3/4 xs:w-2/3 md:w-[400px]">
           Let's Get In Touch!
-        <motion.div
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 0.75,
-            duration: 0.5,
-            y: { type: "spring", stiffness: 300, damping: 30 },
-          }}
-          className="absolute -top-10 -left-10 sm:left-0 -z-10 h-48 w-48  rounded-full bg-celticblue"
-        ></motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.75,
+              duration: 0.5,
+              y: { type: "spring", stiffness: 300, damping: 30 },
+            }}
+            className="absolute -top-10 -left-10 -z-10 h-48 w-48 rounded-full  bg-celticblue sm:left-0 md:left-10"
+          ></motion.div>
         </motion.div>
       </div>
 
@@ -50,7 +48,6 @@ const Contact = () => {
         </p>
       </motion.div>
       <ContactForm />
-      
     </div>
   );
 };

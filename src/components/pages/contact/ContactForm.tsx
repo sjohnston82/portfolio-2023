@@ -70,9 +70,9 @@ const ContactForm = () => {
   // }
 
   return (
-    <div className="m-auto my-10 flex w-[90%] sm:w-4/5 flex-col items-center justify-center rounded border-2 bg-gray-900 shadow-lg shadow-black ">
+    <div className="m-auto my-10 flex w-[90%] flex-col items-center justify-center rounded border-2 bg-gray-900 shadow-lg shadow-black sm:w-4/5 ">
       {submitted ? (
-        <div className="flex flex-col items-center justify-center text-lg italic text-gray-500 py-2">
+        <div className="flex flex-col items-center justify-center py-2 text-lg italic text-gray-500">
           <p className="">Thank you!</p>
           <p className="">I will be in touch soon.</p>
         </div>
@@ -83,7 +83,7 @@ const ContactForm = () => {
           ref={contactForm}
         >
           <input
-            className="p-2 "
+            className="p-2 dark:bg-gray-400 dark:placeholder-gray-700"
             type="text"
             placeholder="Enter your name"
             {...register("fullName")}
@@ -94,7 +94,7 @@ const ContactForm = () => {
             </p>
           )}
           <input
-            className="p-2"
+            className="p-2 dark:bg-gray-400 dark:placeholder-gray-700"
             type="text"
             placeholder="Enter your email"
             {...register("email")}
@@ -105,7 +105,7 @@ const ContactForm = () => {
             </p>
           )}
           <textarea
-            className="p-2"
+            className="p-2 dark:bg-gray-400 dark:placeholder-gray-700"
             placeholder="Enter your message"
             onKeyDown={handleKeyDown}
             {...register("message")}

@@ -32,8 +32,8 @@ const Nav = () => {
       custom={windowSize.innerHeight}
       className={
         isOpen
-          ? "absolute top-0 z-50  border-b bg-white dark:bg-gray-900"
-          : "fixed top-0 z-50  border-b bg-navbar dark:bg-gray-900"
+          ? "absolute top-0 z-50  border-b bg-white dark:bg-gray-900 overflow-hidden"
+          : "fixed top-0 z-50  border-b bg-navbar dark:bg-gray-900 overflow-hidden"
       }
       ref={navRef}
     >

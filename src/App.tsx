@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="h-screen w-screen overflow-x-hidden sm:text-[18px] scroll-smooth bg-stone-50 dark:bg-gray-800 dark:text-zinc-50">
+      <div className="h-screen w-screen overflow-x-hidden scroll-smooth bg-stone-50 dark:bg-gray-800 dark:text-zinc-50 sm:text-[18px] md:text-[20px]">
         <Nav />
         <Landing />
         <Skills />
