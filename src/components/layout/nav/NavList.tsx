@@ -6,7 +6,7 @@ import { AiFillHome, AiFillPhone } from "react-icons/ai";
 import { FaTools } from "react-icons/fa";
 import { HiCode } from "react-icons/hi";
 
-import { Link } from "react-router-dom";
+
 import NavLink from "./NavLink";
 
 const NavList = () => {

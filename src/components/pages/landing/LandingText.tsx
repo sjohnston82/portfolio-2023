@@ -1,5 +1,5 @@
 import React from "react";
-import HRWithIcon from "../../layout/HRWithIcon";
+import HRWithIcon from "../../layout/HRWithText";
 
 import { FaTools } from "react-icons/fa";
 

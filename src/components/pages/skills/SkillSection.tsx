@@ -28,6 +28,7 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
         <div className="absolute bottom-0 left-28 z-0  h-40 w-40 animate-blob rounded-full bg-blue-300 opacity-70 mix-blend-multiply blur-2xl filter animation-delay-1200 dark:bg-red-900 dark:opacity-40 "></div>
         <div className="mx-1 mb-1 h-full rounded-b bg-stone-50 pt-1 dark:bg-gray-800">
           <AnimatePresence mode="wait" initial={false}>
+            
             {category === "languages" && (
               <motion.div
                 key={1}
