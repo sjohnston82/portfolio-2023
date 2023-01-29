@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HRWithText from "../../layout/HRWithText";
 import SkillSection from "./SkillSection";
 import SkillsNav from "./SkillsNav";
 import SkillsViewer from "./SkillsViewer";
@@ -25,9 +26,16 @@ const Skills = () => {
         </svg>
       </div>
 
-      <h1 className="my-10 text-center font-ibmplexsans text-3xl font-semibold text-white drop-shadow-lg">
+      <HRWithText
+        containerClasses="inline-flex w-full items-center justify-center font-ibmplexsans my-16"
+        text="My Skills"
+        HRClasses="my-8 h-[2px] w-3/4 rounded border-0 bg-stone-50 dark:bg-gray-700 lg:w-2/3"
+        textClasses="absolute left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#287ddf] to-[#2a81e0] font-semibold text-3xl px-4 dark:bg-gray-900 lg:text-4xl text-stone-50"
+      />
+
+      {/* <h1 className="lg: my-10 text-center font-ibmplexsans text-3xl font-semibold text-white drop-shadow-lg lg:mt-32">
         My Skills
-      </h1>
+      </h1> */}
 
       <SkillsViewer category={category} setCategory={setCategory} />
     </div>
