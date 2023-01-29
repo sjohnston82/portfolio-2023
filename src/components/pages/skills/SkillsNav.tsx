@@ -8,10 +8,10 @@ interface SkillsNavProps {
 
 const SkillsNav = ({ category, setCategory }: SkillsNavProps) => {
   let navTabClasses =
-    "relative text-center text-sm z-0 pb-2 mt-1 cursor-pointer rounded-t bg-stone-50 p-1 w-full  font-semibold dark:bg-gray-800 md:text-base";
+    "relative text-center text-sm z-0 pb-2 mt-1 cursor-pointer rounded-t bg-stone-50 p-1 w-full  font-semibold dark:bg-gray-800 md:text-base hover:bg-stone-200";
 
   let navTabSelectedClasses =
-    "relative text-center text-sm pb-2 z-10 mt-1 cursor-pointer rounded-t bg-[#eee] p-1 w-full  font-semibold dark:bg-gray-700 md:text-base";
+    "relative text-center text-sm pb-2 z-10 mt-1 cursor-pointer rounded-t bg-stone-200 p-1 w-full  font-semibold dark:bg-gray-700 md:text-base";
   let underlineClasses =
     "underlined text-center absolute bottom-1 left-0 right-0 z-50 h-[2px] bg-blue-900 dark:bg-zinc-100";
   return (

@@ -41,14 +41,14 @@ const Yahtzee = () => {
       </div>
 
       <div className="mt-5">
-        <p className="font-['Titillium Web'] m-auto w-4/5 rounded-tr-xl border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark ">
+        <p className="font-['Titillium Web'] m-auto w-4/5 rounded-tr-xl border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 ">
           An online multiplayer version of Yahtzee built using the MERN stack
           and socket.io. Play full games and chat.
         </p>
         <p className="m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark ">
           Features
         </p>
-        <ul className="mx-auto w-3/4 list-disc marker:text-jobtracker dark:marker:text-jobtrackeraccentdark">
+        <ul className="mx-auto w-3/4 list-disc marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-1/2 lg:m-auto">
           <li className="m-auto my-1  w-full">
             <p className="">Uses socket.io for real-time game-play. </p>
           </li>
@@ -82,7 +82,7 @@ const Yahtzee = () => {
             </button>
           </a>
         </div>
-        <p className="m-auto w-2/3 pb-6 text-xs italic">
+        <p className="m-auto w-2/3 pb-6 text-xs italic lg:text-sm text-center">
           * Unfortunately, due to Heroku free-tier being removed, this project
           is currently unhosted.{" "}
         </p>
