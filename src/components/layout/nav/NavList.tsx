@@ -6,7 +6,6 @@ import { AiFillHome, AiFillPhone } from "react-icons/ai";
 import { FaTools } from "react-icons/fa";
 import { HiCode } from "react-icons/hi";
 
-
 import NavLink from "./NavLink";
 
 const NavList = () => {
@@ -19,7 +18,7 @@ const NavList = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.15,
       },
     },
   };
@@ -44,7 +43,7 @@ const NavList = () => {
           variants={itemVariants}
           title="Home"
           icon={
-            <AiFillHome  className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]" />
+            <AiFillHome className="text-[1.3rem] group-hover:fill-celticblue md:text-[1.8rem]" />
           }
           link="#home"
         />
@@ -52,7 +51,7 @@ const NavList = () => {
           variants={itemVariants}
           title="Skills"
           icon={
-            <FaTools  className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]" />
+            <FaTools className="text-[1.3rem] group-hover:fill-celticblue md:text-[1.8rem]" />
           }
           link="#skills"
         />
@@ -60,7 +59,7 @@ const NavList = () => {
           variants={itemVariants}
           title="Projects"
           icon={
-            <HiCode  className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]" />
+            <HiCode className="text-[1.3rem] group-hover:fill-celticblue md:text-[1.8rem]" />
           }
           link="#projects"
         />
@@ -68,15 +67,10 @@ const NavList = () => {
           variants={itemVariants}
           title="Contact"
           icon={
-            <AiFillPhone
-              
-              className="group-hover:fill-celticblue text-[1.3rem] md:text-[1.8rem]"
-            />
+            <AiFillPhone className="text-[1.3rem] group-hover:fill-celticblue md:text-[1.8rem]" />
           }
           link="#contact"
         />
-
-       
       </motion.ul>
     </div>
   );

@@ -5,7 +5,7 @@ import SocialMediaButtonGroup from "../../layout/SocialMediaButtonGroup";
 
 const LandingButtonGroup = () => {
   return (
-    <div className="mt-4 flex flex-col items-center justify-center gap-5 font-ibmplexsans font-semibold ">
+    <div className="mt-4 flex flex-col items-center justify-center gap-5 font-ibmplexsans font-semibold xl:mt-0 ">
       <a
         href="https://res.cloudinary.com/sjohnston82/image/upload/v1670276349/u9bipgajsof2jw79tv4c.pdf"
         target="_blank"
