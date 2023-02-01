@@ -60,7 +60,7 @@ const TechUsed = () => {
     "m-2 flex flex-col rounded border bg-stone-50 p-1 shadow-lg dark:shadow-gray-900 shadow-gray-700 dark:bg-[#243B53] xxs:w-[15ch] ";
     
   return (
-    <>
+    <div className="mr-10">
       <p className="m-auto my-3 w-[9ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark">
         Tech Used
       </p>
@@ -73,7 +73,7 @@ const TechUsed = () => {
           duration: 0.5,
           y: { type: "spring", stiffness: 300, damping: 30 },
         }}
-        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-6 md:gap-5"
+        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-3 md:gap-5 xl:gap-y-0 xl:gap-x-10"
       >
         {project === 1
           ? techListJobTracker.map((tech) => {
@@ -120,7 +120,7 @@ const TechUsed = () => {
               );
             })}
       </motion.div>
-    </>
+    </div>
   );
 };
 

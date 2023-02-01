@@ -39,6 +39,7 @@ module.exports = {
         maximumblue: "#42BFDD",
         accentyellow: "#f9b636",
         techcard: "rgba(0, 0, 0, 0.7)",
+        techcard2: "rgba(0, 0, 0, 0.4)",
         jobtracker: "#212121",
         quartermaster: "#EE4E34",
         navbar: "rgba(255, 255, 255, 0.9)",

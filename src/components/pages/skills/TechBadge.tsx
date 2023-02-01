@@ -12,7 +12,7 @@ const TechBadge = ({ image, title, smallText }: TechBadgeProps) => {
       <img
         className={
           smallText
-            ? "h-10 w-10 xxs:h-14 xxs:w-14 md:h-20 md:w-20"
+            ? "h-10 w-10 xxs:h-14 xxs:w-14 md:h-24 md:w-24"
             : "h-12 w-12 p-1 xxs:h-16 xxs:w-16 md:h-24 md:w-24"
         }
         src={image}
