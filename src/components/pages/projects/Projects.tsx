@@ -8,6 +8,7 @@ import Transition from "../../helpers/animations/Transition";
 
 import { AnimatePresence, motion } from "framer-motion";
 import HRWithText from "../../layout/HRWithText";
+import Project from "./Project";
 
 const Projects = () => {
   const context = useContext(PortfolioContext);
@@ -41,9 +42,10 @@ const Projects = () => {
       <ProjectSelectBar project={project} setProject={setProject} />
 
       <AnimatePresence mode="wait">
-        {project === 1 && <JobTracker key={1} />}
+        {/* {project === 1 && <JobTracker key={1} />}
         {project === 2 && <Yahtzee key={2} />}
-        {project === 3 && <QuarterMaster key={3} />}
+        {project === 3 && <QuarterMaster key={3} />} */}
+        <Project />
       </AnimatePresence>
     </div>
   );

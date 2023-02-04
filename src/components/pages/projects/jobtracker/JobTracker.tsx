@@ -7,6 +7,7 @@ import { pageTransitionSideVariants } from "../../../helpers/animations/variants
 import JobTrackerLogo from "../../../../styles/assets/images/JobTrackerLogo.png";
 
 import TechUsed from "../TechUsed";
+import JobTrackerBadge from "../logos/JobTrackerBadge";
 
 const JobTracker = () => {
   return (
@@ -22,16 +23,7 @@ const JobTracker = () => {
       className="bg-seagreen pt-10 dark:bg-projectdark"
       id="jobtracker"
     >
-      <div className="m-auto min-h-[228px]  w-2/3 rounded-xl bg-jobtracker md:w-1/2">
-        <img
-          src={JobTrackerLogo}
-          alt="Job Tracker Logo"
-          className="m-auto w-2/3 md:w-1/2"
-        />
-        <p className="font-['Titillium Web'] mt-4 text-center text-3xl font-bold normal-case text-white  sm:pb-5 sm:text-[36px]">
-          Job<span className="text-[#f9b636]">Tracker</span>
-        </p>
-      </div>
+     <JobTrackerBadge />
 
       <div className="mt-5  ">
         <p className="font-['Titillium Web'] xl:w2/3 m-auto w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2">

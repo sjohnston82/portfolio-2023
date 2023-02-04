@@ -14,6 +14,7 @@ import NodejsBadgeImage from "../../../styles/assets/images/NodejsBadgeImage.png
 
 import TechBadge from "../../skills/TechBadge";
 import TechUsed from "../TechUsed";
+import QuarterMasterBadge from "../logos/QuarterMasterBadge";
 
 const QuarterMaster = () => {
   return (
@@ -29,16 +30,7 @@ const QuarterMaster = () => {
       className="bg-seagreen pt-10 dark:bg-projectdark"
       id="quartermaster"
     >
-      <div className="m-auto min-h-[228px] w-2/3 rounded-xl bg-quartermaster md:w-1/2">
-        <img
-          src={QuarterMasterLogo}
-          alt="QuarterMaster Logo"
-          className="m-auto  w-4/5 md:w-1/2"
-        />
-        <p className="mt-5 text-center font-alegreya text-3xl font-bold normal-case italic text-black sm:pb-5 sm:text-[36px]">
-          QuarterMaster
-        </p>
-      </div>
+      <QuarterMasterBadge />
 
       <div className="mt-5">
         <p className="font-['Titillium Web'] m-auto w-4/5 rounded-tr-xl border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3">
