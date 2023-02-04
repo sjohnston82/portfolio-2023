@@ -32,9 +32,9 @@ const Project = () => {
       {project === 1 ? (
         <JobTrackerBadge />
       ) : project === 2 ? (
-        <QuarterMasterBadge />
-      ) : (
         <YahtzeeBadge />
+      ) : (
+        <QuarterMasterBadge />
       )}
 
       <div className="mt-5">
@@ -46,8 +46,14 @@ const Project = () => {
             : quarterMasterData.tagline}
         </p>
 
-        <div className="xl:flex">
-          <div className="xl:flex xl:w-2/3 xl:flex-col">
+        <div className="xl:flex xl:w-full xl:justify-center">
+          <div
+            className={
+              project === 2
+                ? "xl:flex xl:w-1/2 xl:flex-col"
+                : "xl:flex xl:w-2/3 xl:flex-col"
+            }
+          >
             <p className="m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark ">
               Features
             </p>
@@ -93,7 +99,13 @@ const Project = () => {
             rel="noopener noreferrer"
             className={project === 2 ? "pointer-events-none" : ""}
           >
-            <button className="duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5">
+            <button
+              className={
+                project === 2
+                  ? "duration-400 pointer-events-none w-full rounded-3xl border-2 bg-gray-400 p-2 font-semibold text-white transition-all ease-in-out xxs:px-5 xl:px-12 xl:py-3"
+                  : "duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3"
+              }
+            >
               Try it Live
             </button>
           </a>
@@ -109,7 +121,7 @@ const Project = () => {
                 : quarterMasterData.codeLink
             }
           >
-            <button className="duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5">
+            <button className="duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3">
               See the Code
             </button>
           </a>

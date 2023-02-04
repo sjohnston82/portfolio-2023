@@ -31,7 +31,7 @@ const Contact = () => {
               duration: 0.5,
               y: { type: "spring", stiffness: 300, damping: 30 },
             }}
-            className="absolute -top-10 -left-10 -z-10 h-48 w-48 rounded-full  bg-celticblue sm:left-0 md:left-10"
+            className="absolute -top-12 -left-10 -z-10 h-48 w-48 rounded-full  bg-celticblue sm:left-0 md:left-10"
           ></motion.div>
         </motion.div>
       </div>

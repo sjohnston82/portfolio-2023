@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { PortfolioContext } from '../../../context/PortfolioContext';
+import { PortfolioContext } from "../../../context/PortfolioContext";
 import { motion } from "framer-motion";
 
 import JavascriptBadgeImage from "../../../styles/assets/images/JavascriptBadgeImage.svg";
@@ -14,8 +14,6 @@ import DjangoBadgeImage from "../../../styles/assets/images/DjangoBadgeImage.png
 import PythonBadgeImage from "../../../styles/assets/images/PythonBadgeImage.png";
 import SocketioBadgeImageDark from "../../../styles/assets/images/SocketioBadgeImageDark.png";
 
-
-
 interface TechList {
   title: string;
   image: React.ReactNode;
@@ -23,11 +21,9 @@ interface TechList {
 }
 
 const TechUsed = () => {
-
   const context = useContext(PortfolioContext);
   if (!context) return null;
   const { project } = context;
-
 
   const techListJobTracker = [
     { title: "JavaScript", image: JavascriptBadgeImage, id: 1 },
@@ -58,9 +54,9 @@ const TechUsed = () => {
 
   const techBadgeClasses =
     "m-2 flex flex-col rounded border bg-stone-50 p-1 shadow-lg dark:shadow-gray-900 shadow-gray-700 dark:bg-[#243B53] xxs:w-[15ch] ";
-    
+
   return (
-    <div className="mr-10">
+    <div className="">
       <p className="m-auto my-3 w-[9ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark">
         Tech Used
       </p>
@@ -73,7 +69,7 @@ const TechUsed = () => {
           duration: 0.5,
           y: { type: "spring", stiffness: 300, damping: 30 },
         }}
-        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-3 md:gap-5 xl:gap-y-0 xl:gap-x-10"
+        className="xmd:grid-cols-6 m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-3 md:gap-5 xl:gap-y-0 xl:gap-x-10 xl:grid-cols-3 xl:w-full xl:-ml-6"
       >
         {project === 1
           ? techListJobTracker.map((tech) => {
@@ -82,7 +78,7 @@ const TechUsed = () => {
                   <img
                     src={tech.image}
                     alt={tech.title}
-                    className=" w-[10ch]  xxs:h-[87px] xxs:w-[15ch] "
+                    className=" min-h-[75px] w-[10ch]  xxs:h-[87px] xxs:w-[15ch] "
                   />
                   <p className="text-center font-semibold italic xxs:text-base">
                     {tech.title}
@@ -97,7 +93,7 @@ const TechUsed = () => {
                   <img
                     src={tech.image}
                     alt={tech.title}
-                    className=" w-[10ch]  xxs:h-[87px] xxs:w-[15ch] "
+                    className=" min-h-[75px] w-[10ch]  xxs:h-[87px] xxs:w-[15ch] "
                   />
                   <p className="text-center font-semibold italic xxs:text-base">
                     {tech.title}
@@ -111,7 +107,7 @@ const TechUsed = () => {
                   <img
                     src={tech.image}
                     alt={tech.title}
-                    className=" w-[10ch]  xxs:h-[87px] xxs:w-[15ch] "
+                    className=" min-h-[75px] w-[10ch] xxs:h-[87px] xxs:w-[15ch] "
                   />
                   <p className="text-center font-semibold italic xxs:text-base">
                     {tech.title}

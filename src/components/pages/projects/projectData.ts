@@ -23,7 +23,7 @@ export const jobTrackerData: Project = {
 
 export const yahtzeeData: Project = {
   tagline:
-    "An online multiplayer version of Yahtzee built using the MERN stack and socket.io. Play full games and chat.",
+    "An online multiplayer version of Yahtzee built using the MERN stack and socket.io. Play full games and chat.  This project was a partner capstone for PDX Code Guild's Adv. JavaScript & MERN Stack Course.",
   features: [
     "Uses socket.io for real-time game-play.",
     "Ability to host lobbies for other to join.",

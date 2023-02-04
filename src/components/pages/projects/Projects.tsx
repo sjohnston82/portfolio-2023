@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import { PortfolioContext } from "../../../context/PortfolioContext";
 import ProjectSelectBar from "./ProjectSelectBar";
-import JobTracker from "./jobtracker/JobTracker";
-import QuarterMaster from "./quartermaster/QuarterMaster";
-import Yahtzee from "./yahtzee/Yahtzee";
+
 import Transition from "../../helpers/animations/Transition";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -34,7 +32,7 @@ const Projects = () => {
         containerClasses="inline-flex w-full items-center justify-center font-ibmplexsans my-16"
         text="My Projects"
         HRClasses="my-8 h-[2px] w-3/4 rounded border-0 bg-black dark:bg-gray-700 lg:w-2/3"
-        textClasses="absolute left-1/2 -translate-x-1/2 bg-seagreen font-semibold text-3xl px-4 dark:bg-projectdark"
+        textClasses="absolute left-1/2 -translate-x-1/2 bg-seagreen font-semibold text-2xl xxs:text-3xl px-4 dark:bg-projectdark"
       />
       {/* <h1 className="my-10 text-center font-ibmplexsans text-3xl font-semibold  drop-shadow-lg">
         My Projects
@@ -45,7 +43,7 @@ const Projects = () => {
         {/* {project === 1 && <JobTracker key={1} />}
         {project === 2 && <Yahtzee key={2} />}
         {project === 3 && <QuarterMaster key={3} />} */}
-        <Project />
+        <Project key={project} />
       </AnimatePresence>
     </div>
   );

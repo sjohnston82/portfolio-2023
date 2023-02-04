@@ -13,13 +13,13 @@ module.exports = {
             transform: "translate(0px, 0px) scale(1)",
           },
           "20%": {
-            transform: "translate(50px, 0px) scale(1.2)",
+            transform: "translate(50px, 0px) scale(1.1)",
           },
           "40%": {
             transform: "translate(0px, 50px) scale(0.9)",
           },
           "60%": {
-            transform: "translate(-50px, 0px) scale(1.2)",
+            transform: "translate(-50px, 0px) scale(1.1)",
           },
           "80%": {
             transform: "translate(0px, -50px) scale(0.9)",
@@ -60,6 +60,8 @@ module.exports = {
       screens: {
         xs: "550px",
         xxs: "450px",
+        xmd: "896px",
+        lxl: "1152px",
       },
     },
   },
