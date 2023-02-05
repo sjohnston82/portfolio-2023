@@ -3,7 +3,7 @@ import QuarterMasterLogo from '../../../../styles/assets/images/QuarterMasterLog
 
 const QuarterMasterBadge = () => {
   return (
-    <div className="m-auto min-h-[228px] w-2/3 rounded-xl bg-quartermaster md:w-1/2">
+    <div className="m-auto min-h-[228px]  w-2/3 rounded-xl bg-quartermaster md:w-1/2">
       <img
         src={QuarterMasterLogo}
         alt="QuarterMaster Logo"

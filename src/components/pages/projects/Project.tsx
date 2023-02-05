@@ -26,67 +26,76 @@ const Project = () => {
         x: { type: "spring", stiffness: 300, damping: 30 },
         opacity: { duration: 0.5 },
       }}
-      className="bg-seagreen pt-10 dark:bg-projectdark"
+      className="bg-seagreen pt-10 dark:bg-projectdark 2xl:flex"
       id="jobtracker"
     >
-      {project === 1 ? (
-        <JobTrackerBadge />
-      ) : project === 2 ? (
-        <YahtzeeBadge />
-      ) : (
-        <QuarterMasterBadge />
-      )}
-
-      <div className="mt-5">
-        <p className="font-['Titillium Web']  m-auto w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2 xl:text-2xl ">
-          {project === 1
-            ? jobTrackerData.tagline
-            : project === 2
-            ? yahtzeeData.tagline
-            : quarterMasterData.tagline}
-        </p>
-
-        <div className="xl:flex xl:w-full xl:justify-center">
-          <div
-            className={
-              project === 2
-                ? "xl:flex xl:w-1/2 xl:flex-col pl-40"
-                : "xl:flex xl:w-1/2 xl:flex-col pl-12"
-            }
-          >
-            <p className="m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark ">
-              Features
-            </p>
-            <ul className="mx-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4">
-              {project === 1
-                ? jobTrackerData.features.map((feature, index) => {
-                    return (
-                      <li className="m-auto my-1 w-full" key={index}>
-                        {feature}
-                      </li>
-                    );
-                  })
-                : project === 2
-                ? yahtzeeData.features.map((feature, index) => {
-                    return (
-                      <li className="m-auto my-1 w-full" key={index}>
-                        {feature}
-                      </li>
-                    );
-                  })
-                : quarterMasterData.features.map((feature, index) => {
-                    return (
-                      <li className="m-auto my-1 w-full" key={index}>
-                        {feature}
-                      </li>
-                    );
-                  })}
-            </ul>
+      <div className="">
+        <div className="2xl:flex">
+          <div className="2xl:flex 2xl:w-[40%]  2xl:flex-col">
+            <div className="pt-12">
+              {project === 1 ? (
+                <JobTrackerBadge />
+              ) : project === 2 ? (
+                <YahtzeeBadge />
+              ) : (
+                <QuarterMasterBadge />
+              )}
+            </div>
+            <div className="">
+              <p className="font-['Titillium Web'] m-auto  mt-5 w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2 xl:text-2xl 2xl:w-4/5 ">
+                {project === 1
+                  ? jobTrackerData.tagline
+                  : project === 2
+                  ? yahtzeeData.tagline
+                  : quarterMasterData.tagline}
+              </p>
+            </div>
           </div>
-          <TechUsed />
+
+          <div className="xl:flex xl:w-full xl:justify-center 2xl:w-full 2xl:flex-col">
+            <div
+              className={
+                project === 2
+                  ? "xl:flex xl:w-1/2 xl:flex-col xl:pl-40  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0"
+                  : "xl:flex xl:w-1/2 xl:flex-col xl:pl-12  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0"
+              }
+            >
+              <p className="m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl">
+                Features
+              </p>
+              <ul className="m-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4">
+                {project === 1
+                  ? jobTrackerData.features.map((feature, index) => {
+                      return (
+                        <li className="m-auto my-1 w-full" key={index}>
+                          {feature}
+                        </li>
+                      );
+                    })
+                  : project === 2
+                  ? yahtzeeData.features.map((feature, index) => {
+                      return (
+                        <li className="m-auto my-1 w-full" key={index}>
+                          {feature}
+                        </li>
+                      );
+                    })
+                  : quarterMasterData.features.map((feature, index) => {
+                      return (
+                        <li className="m-auto my-1 w-full" key={index}>
+                          {feature}
+                        </li>
+                      );
+                    })}
+              </ul>
+            </div>
+            <div className="2xl:w-full">
+              <TechUsed />
+            </div>
+          </div>
         </div>
 
-        <div className="mt-6 flex justify-center gap-5 py-12">
+        <div className="mt-6 flex justify-center gap-5 py-12 lxl:gap-10">
           <a
             href={
               project === 1
@@ -102,8 +111,8 @@ const Project = () => {
             <button
               className={
                 project === 2
-                  ? "duration-400 pointer-events-none w-full rounded-3xl border-2 bg-gray-400 p-2 font-semibold text-white transition-all ease-in-out xxs:px-5 xl:px-12 xl:py-3"
-                  : "duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:shadow-lg hover:shadow-gray-700 hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3"
+                  ? "duration-400 pointer-events-none w-full rounded-3xl  bg-gray-400 p-2 font-semibold text-white transition-all ease-in-out xxs:px-5 xl:px-12 xl:py-3"
+                  : "duration-400 w-full rounded-3xl  bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue hover:shadow-lg hover:shadow-gray-700 xxs:px-5 xl:px-12 xl:py-3"
               }
             >
               Try it Live
@@ -121,7 +130,7 @@ const Project = () => {
                 : quarterMasterData.codeLink
             }
           >
-            <button className=" hover:shadow-lg hover:shadow-gray-700 duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3">
+            <button className=" duration-400 w-full rounded-3xl  bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue hover:shadow-lg hover:shadow-gray-700 xxs:px-5 xl:px-12 xl:py-3">
               See the Code
             </button>
           </a>

@@ -4,7 +4,7 @@ import JobTrackerLogo from '../../../../styles/assets/images/JobTrackerLogo.png'
 
 const JobTrackerBadge = () => {
   return (
-    <div className="m-auto min-h-[228px]  w-2/3 rounded-xl bg-jobtracker md:w-1/2">
+    <div className="m-auto min-h-[228px]  w-2/3 rounded-xl bg-jobtracker md:w-1/2 2xl:w-4/5">
       <img
         src={JobTrackerLogo}
         alt="Job Tracker Logo"
