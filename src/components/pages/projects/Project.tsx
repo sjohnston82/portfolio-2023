@@ -103,7 +103,7 @@ const Project = () => {
               className={
                 project === 2
                   ? "duration-400 pointer-events-none w-full rounded-3xl border-2 bg-gray-400 p-2 font-semibold text-white transition-all ease-in-out xxs:px-5 xl:px-12 xl:py-3"
-                  : "duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3"
+                  : "duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:shadow-lg hover:shadow-gray-700 hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3"
               }
             >
               Try it Live
@@ -121,7 +121,7 @@ const Project = () => {
                 : quarterMasterData.codeLink
             }
           >
-            <button className="duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3">
+            <button className=" hover:shadow-lg hover:shadow-gray-700 duration-400 w-full rounded-3xl border-2 bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue xxs:px-5 xl:px-12 xl:py-3">
               See the Code
             </button>
           </a>
