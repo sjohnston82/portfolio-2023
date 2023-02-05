@@ -40,7 +40,6 @@ export const quarterMasterData: Project = {
     "Keep track of food expiration dates so you know when the things that get pushed to back of the pantry are ready to be thrown out.",
     "Add items to a grocery list to make shopping easy.",
     "Uses the spoonacular API to generate images for food items that are added.",
-    "Sort and filter active and archived listings.",
   ],
   projectLink: "https://quartermaster.pythonanywhere.com/",
   codeLink: "https://github.com/sjohnston82/quartermaster/",

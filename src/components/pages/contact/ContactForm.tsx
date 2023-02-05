@@ -70,7 +70,7 @@ const ContactForm = () => {
   // }
 
   return (
-    <div className="m-auto my-10 flex w-[90%] flex-col items-center justify-center rounded border-2 bg-gray-900 shadow-lg shadow-black sm:w-4/5 lg:w-2/3 ">
+    <div className="m-auto my-10 flex w-[90%] flex-col items-center justify-center rounded border-2 bg-gray-900 shadow-lg shadow-black sm:w-4/5 lg:w-2/3 lxl:w-1/2 ">
       {submitted ? (
         <div className="flex flex-col items-center justify-center py-2 text-lg italic text-gray-500">
           <p className="">Thank you!</p>

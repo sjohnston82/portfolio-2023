@@ -38,7 +38,7 @@ const Project = () => {
       )}
 
       <div className="mt-5">
-        <p className="font-['Titillium Web'] xl:w2/3 m-auto w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2">
+        <p className="font-['Titillium Web']  m-auto w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2 xl:text-2xl ">
           {project === 1
             ? jobTrackerData.tagline
             : project === 2
@@ -50,14 +50,14 @@ const Project = () => {
           <div
             className={
               project === 2
-                ? "xl:flex xl:w-1/2 xl:flex-col"
-                : "xl:flex xl:w-2/3 xl:flex-col"
+                ? "xl:flex xl:w-1/2 xl:flex-col pl-40"
+                : "xl:flex xl:w-1/2 xl:flex-col pl-12"
             }
           >
             <p className="m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark ">
               Features
             </p>
-            <ul className="mx-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3">
+            <ul className="mx-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4">
               {project === 1
                 ? jobTrackerData.features.map((feature, index) => {
                     return (
@@ -86,7 +86,7 @@ const Project = () => {
           <TechUsed />
         </div>
 
-        <div className="mt-6 flex justify-center gap-5 pb-10">
+        <div className="mt-6 flex justify-center gap-5 py-12">
           <a
             href={
               project === 1
