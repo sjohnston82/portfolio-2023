@@ -26,12 +26,11 @@ const Skills = () => {
         </svg>
       </div>
 
-      <HRWithText
-        containerClasses="inline-flex w-full items-center justify-center font-ibmplexsans my-16"
-        text="My Skills"
-        HRClasses="my-8 h-[2px] w-3/4 rounded border-0 bg-stone-50 dark:bg-gray-700 lg:w-2/3"
-        textClasses=" absolute left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#287ddf] to-[#2a81e0] dark:bg-gradient-to-b dark:from-techcard2 dark:to-techcard2 font-semibold text-3xl px-4 dark:bg-gray-900 lg:text-4xl text-stone-50"
-      />
+
+
+      <h1 className=" drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-3xl my-16 text-center font-ibmplexsans font-semibold text-stone-50 lg:text-4xl xl:text-5xl">
+        My Skills
+      </h1>
 
       {/* <h1 className="lg: my-10 text-center font-ibmplexsans text-3xl font-semibold text-white drop-shadow-lg lg:mt-32">
         My Skills

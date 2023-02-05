@@ -7,7 +7,7 @@ const Footer = () => {
   if (!context) return null;
   const { setProject } = context;
 
-  let footerClasses: string = "w-full p-1 text-gray-500 z-0 bg-gray-800 mb-3";
+  let footerClasses: string = "w-full p-1 text-gray-500 z-0 bg-gray-800 pb-3";
 
   return (
     <footer className={footerClasses}>
