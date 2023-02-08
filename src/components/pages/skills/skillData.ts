@@ -121,3 +121,14 @@ export const allMiscSkills: SkillGroup[] = [
     title: "Veteran",
   },
 ];
+
+export const thingsILove: SkillGroup[] = [
+  {
+    image: JavascriptBadgeImage,
+    title: "JavaScript",
+  },
+  {
+    image: ReactBadgeImage,
+    title: "React"
+  },
+]

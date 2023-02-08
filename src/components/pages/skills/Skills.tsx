@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HRWithText from "../../layout/HRWithText";
 import SkillSection from "./SkillSection";
+import SkillsExtra from "./SkillsExtra";
 import SkillsNav from "./SkillsNav";
 import SkillsViewer from "./SkillsViewer";
 
@@ -37,6 +38,7 @@ const Skills = () => {
       </h1> */}
 
       <SkillsViewer category={category} setCategory={setCategory} />
+      {/* <SkillsExtra /> */}
     </div>
   );
 };

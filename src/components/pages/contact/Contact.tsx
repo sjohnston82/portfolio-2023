@@ -42,7 +42,7 @@ const Contact = () => {
         transition={{ duration: 1, delay: 1 }}
         className="relative mx-6 mt-16 text-center text-3xl text-white"
       >
-        <p className="m-auto text-center text-2xl text-white xs:w-3/4 lxl:w-2/3 lxl:text-3xl">
+        <p className="m-auto text-center text-2xl text-white xs:w-3/4 lxl:w-2/3 lxl:text-3xl 2xl:w-1/2">
           Feel free to reach out to me with employment opportunities, questions,
           or if you want to collaborate on something!
         </p>
