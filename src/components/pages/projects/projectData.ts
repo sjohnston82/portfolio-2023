@@ -28,6 +28,7 @@ export const yahtzeeData: Project = {
     "Uses socket.io for real-time game-play.",
     "Ability to host lobbies for other to join.",
     "Chat with your friends in-game.",
+    "Make and edit user accounts with full authentication.",
   ],
   codeLink: "https://github.com/mcbridz/pdx_yahtzee",
 };

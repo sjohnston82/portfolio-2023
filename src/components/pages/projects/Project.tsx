@@ -31,7 +31,7 @@ const Project = () => {
     >
       <div className="">
         <div className="2xl:flex">
-          <div className="2xl:flex 2xl:w-[40%]  2xl:flex-col">
+          <div className="2xl:flex 2xl:w-[60%]  2xl:flex-col">
             <div className="pt-12">
               {project === 1 ? (
                 <JobTrackerBadge />
@@ -56,14 +56,26 @@ const Project = () => {
             <div
               className={
                 project === 2
-                  ? "xl:flex xl:w-1/2 xl:flex-col xl:pl-40  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0"
+                  ? "xl:flex xl:w-1/2 xl:flex-col xl:pl-40  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0 2xl:mb-12"
                   : "xl:flex xl:w-1/2 xl:flex-col xl:pl-12  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0"
               }
             >
-              <p className="m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl">
+              <p
+                className={
+                  project === 2
+                    ? "m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl "
+                    : "m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl"
+                }
+              >
                 Features
               </p>
-              <ul className="m-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4">
+              <ul
+                className={
+                  project === 2
+                    ? "m-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4 2xl:pb-10"
+                    : "m-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4 "
+                }
+              >
                 {project === 1
                   ? jobTrackerData.features.map((feature, index) => {
                       return (

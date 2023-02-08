@@ -3,7 +3,7 @@ import YahtzeeLogo from "../../../../styles/assets/images/YahtzeeLogo.png";
 
 const YahtzeeBadge = () => {
   return (
-    <div className="yahtzee-bg m-auto min-h-[228px] w-2/3 rounded-xl p-2 md:w-1/2">
+    <div className="yahtzee-bg m-auto min-h-[228px] w-2/3 rounded-xl p-2 md:w-1/2 2xl:w-4/5">
       <img
         src={YahtzeeLogo}
         alt="Yahtzee Logo"
