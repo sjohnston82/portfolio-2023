@@ -63,7 +63,7 @@ const TechUsed = () => {
       <motion.div
         initial={{ opacity: 0, y: -200 }}
         whileInView={{ opacity: 1, y: 0 }}
-        // viewport={{ once: true }}
+        viewport={{ once: true }}
         transition={{
           delay: 0.5,
           duration: 0.5,

@@ -56,7 +56,7 @@ const Project = () => {
             <div
               className={
                 project === 2
-                  ? "xl:flex xl:w-1/2 xl:flex-col xl:pl-40  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0 2xl:mb-12"
+                  ? "xl:flex xl:w-1/2 xl:flex-col xl:pl-40  2xl:mb-12 2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0"
                   : "xl:flex xl:w-1/2 xl:flex-col xl:pl-12  2xl:flex 2xl:w-full 2xl:flex-col 2xl:justify-center 2xl:pl-0"
               }
             >
@@ -124,7 +124,7 @@ const Project = () => {
               className={
                 project === 2
                   ? "duration-400 pointer-events-none w-full rounded-3xl  bg-gray-400 p-2 font-semibold text-white transition-all ease-in-out xxs:px-5 xl:px-12 xl:py-3"
-                  : "duration-400 w-full rounded-3xl  bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue hover:shadow-lg hover:shadow-gray-700 xxs:px-5 xl:px-12 xl:py-3"
+                  : "duration-400 w-full rounded-3xl  bg-celticblue p-2 font-semibold text-white transition-all ease-in-out  hover:bg-white hover:text-celticblue hover:shadow-lg hover:shadow-gray-700 xxs:px-5 xl:px-12 xl:py-3"
               }
             >
               Try it Live
@@ -142,7 +142,7 @@ const Project = () => {
                 : quarterMasterData.codeLink
             }
           >
-            <button className=" duration-400 w-full rounded-3xl  bg-celticblue p-2 font-semibold text-white transition-all ease-in-out hover:border-2 hover:bg-white hover:text-celticblue hover:shadow-lg hover:shadow-gray-700 xxs:px-5 xl:px-12 xl:py-3">
+            <button className=" duration-400 w-full rounded-3xl  bg-celticblue p-2 font-semibold text-white transition-all ease-in-out  hover:bg-white hover:text-celticblue hover:shadow-lg hover:shadow-gray-700 xxs:px-5 xl:px-12 xl:py-3">
               See the Code
             </button>
           </a>
