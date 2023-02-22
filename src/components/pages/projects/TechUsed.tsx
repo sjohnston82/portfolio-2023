@@ -12,7 +12,7 @@ import VueBadgeImage from "../../../styles/assets/images/VueBadgeImage.png";
 import CSSBadgeImage from "../../../styles/assets/images/CSSBadgeImage.png";
 import DjangoBadgeImage from "../../../styles/assets/images/DjangoBadgeImage.png";
 import PythonBadgeImage from "../../../styles/assets/images/PythonBadgeImage.png";
-import SocketioBadgeImageDark from "../../../styles/assets/images/SocketioBadgeImageDark.png";
+import SocketioBadgeImageDark from "../../../styles/assets/images/SocketIoBadgeImageDark.png";
 
 interface TechList {
   title: string;
