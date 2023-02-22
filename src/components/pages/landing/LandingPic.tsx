@@ -1,5 +1,5 @@
 import React from "react";
-import PlaceholderImage from "../../../styles/assets/images/geneshalit.jpg";
+import LandingImage from "../../../styles/assets/images/landingpic2.png";
 
 const LandingPic = () => {
   return (
@@ -10,7 +10,7 @@ const LandingPic = () => {
         <div className="absolute -top-1 -left-0 z-0 h-60 w-60 rounded-full bg-yellow-100 opacity-70 mix-blend-multiply lg:h-80 lg:w-80 xl:h-96 xl:w-96"></div>
         <div className="absolute top-1 -left-0 z-0 h-60 w-60 rounded-full bg-red-100 opacity-70 mix-blend-multiply lg:h-80 lg:w-80 xl:h-96 xl:w-96"></div>
         <img
-          src={PlaceholderImage}
+          src={LandingImage}
           alt="a pic of me"
           className="relative z-10 m-auto h-60 w-60 rounded-full lg:h-80 lg:w-80 xl:h-96 xl:w-96 "
         />
