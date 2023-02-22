@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
-  "homepage": "https://sjohnston82.github.io/",
+  "homepage": "https://sjohnston82.github.io/portfolio-2023",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
