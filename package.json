@@ -1,6 +1,7 @@
 {
-  "name": "template-vite-react-ts-tailwind-v3",
+  "name": "portfolio",
   "version": "0.0.0",
+  "homepage": "https://sjohnston82.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
