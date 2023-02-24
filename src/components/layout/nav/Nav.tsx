@@ -2,7 +2,6 @@ import React, { useContext, useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import useOnClickOutside from "../../../components/helpers/hooks/useOnClickOutside";
 import { PortfolioContext } from "../../../context/PortfolioContext";
-import ThemeSwitcher from "./ThemeSwitcher";
 import MenuToggle from "./MenuToggle";
 import NavList from "./NavList";
 import Logo from "./Logo";

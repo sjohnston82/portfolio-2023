@@ -1,6 +1,4 @@
-import React from "react";
-import { ImLinkedin2, ImGithub } from "react-icons/im";
-import { SiGmail } from "react-icons/si";
+
 import SocialMediaButtonGroup from "../../layout/SocialMediaButtonGroup";
 
 const LandingButtonGroup = () => {

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import SkillSection from "./SkillSection";
 import SkillsNav from "./SkillsNav";
 

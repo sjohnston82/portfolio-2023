@@ -1,5 +1,5 @@
 import React from "react";
-import LandingImage from "../../../styles/assets/images/landingpic2.png";
+import LandingImage from "../../../styles/assets/images/landingpic2small.webp";
 
 const LandingPic = () => {
   return (

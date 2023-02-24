@@ -8,7 +8,7 @@ import {
   allMiscSkills,
 } from "./skillData";
 import TechBadge from "./TechBadge";
-import SkillsNav from "./SkillsNav";
+
 
 interface SkillSectionProps {
   category: string;

@@ -58,16 +58,6 @@ const ContactForm = () => {
       .then(() => showSubmitMessage());
   };
 
-  // if (submitted) {
-  //   return (
-  //     <>
-  //       <div className="text-2xl">
-  //         <p className="">Thank you!</p>
-  //         <p className="">I will be in touch soon.</p>
-  //       </div>
-  //     </>
-  //   );
-  // }
 
   return (
     <div className="m-auto my-10 flex w-[90%] flex-col items-center justify-center rounded border-2 bg-gray-900 shadow-lg shadow-black sm:w-4/5 lg:w-2/3 lxl:w-1/2 xlx:w-1/3">

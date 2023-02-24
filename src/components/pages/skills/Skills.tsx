@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import HRWithText from "../../layout/HRWithText";
-import SkillSection from "./SkillSection";
-import SkillsExtra from "./SkillsExtra";
-import SkillsNav from "./SkillsNav";
+
 import SkillsViewer from "./SkillsViewer";
 
 const Skills = () => {
@@ -27,18 +24,12 @@ const Skills = () => {
         </svg>
       </div>
 
-
-
       <h1 className=" drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-3xl my-16 text-center font-ibmplexsans font-semibold text-stone-50 lg:text-4xl xl:text-5xl">
         My Skills
       </h1>
 
-      {/* <h1 className="lg: my-10 text-center font-ibmplexsans text-3xl font-semibold text-white drop-shadow-lg lg:mt-32">
-        My Skills
-      </h1> */}
-
       <SkillsViewer category={category} setCategory={setCategory} />
-      {/* <SkillsExtra /> */}
+
     </div>
   );
 };
