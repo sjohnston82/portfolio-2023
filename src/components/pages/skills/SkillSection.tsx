@@ -24,7 +24,7 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
       <div className="relative z-30 m-auto w-full overflow-hidden  rounded font-ibmplexsans font-semibold italic dark:bg-gray-900">
         <div className="absolute top-0 left-4 z-0  h-40 w-40 animate-blob rounded-full bg-purple-300 opacity-100 mix-blend-multiply  blur-2xl filter dark:bg-purple-900 dark:opacity-40 lg:left-16 lg:h-56  lg:w-56 xl:h-40 xl:w-40 2xl:left-40"></div>
         <div className="absolute top-0 right-4 z-0  h-40 w-40 animate-blob rounded-full bg-yellow-300 opacity-50 mix-blend-multiply  blur-2xl filter animation-delay-400 dark:bg-black dark:opacity-40 lg:h-56 lg:w-56 xl:h-40 xl:w-40 2xl:right-20"></div>
-        <div className="absolute bottom-0 left-28 z-0  h-40 w-40 animate-blob rounded-full bg-red-300 opacity-70 mix-blend-multiply  blur-2xl filter animation-delay-1200 dark:bg-red-900 dark:opacity-40 lg:left-64 lg:h-56  lg:w-56 xl:left-48 xl:h-40  xl:w-40"></div>
+        <div className="absolute bottom-0 left-28 z-0  h-40 w-40 animate-blob rounded-full bg-red-300 opacity-70 mix-blend-multiply  blur-2xl filter animation-delay-1200 dark:bg-red-900 dark:opacity-40 lg:left-64 lg:h-56  lg:w-56 xl:left-48 xl:h-40  xl:w-40 2xl:left-64"></div>
         <div className="mx-1 mb-1 h-full rounded-b bg-stone-50 pt-1 dark:bg-gray-800">
           <AnimatePresence mode="wait" initial={false}>
             {category === "languages" && (
