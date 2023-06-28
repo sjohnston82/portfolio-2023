@@ -1,14 +1,14 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
-  "homepage": "https://stephenmjohnston.net",
+  "homepage": "https://sjohnston82.github.io/portfolio-2023/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "scss": "node-sass src/styles/scss/main.scss src/dist/css/main.css -w",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
