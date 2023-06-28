@@ -6,12 +6,17 @@
 @import "./skills";
 @import "./projects";
 
-
-
 @font-face {
   font-family: "Revue";
   src: url("../assets/fonts/reve.woff") format("woff2"),
     url("../assets/fonts/reve.woff") format("woff");
+}
+
+@layer base {
+  @font-face {
+    font-family: "ALoveofThunder";
+    src: url("../assets/fonts/ALoveofThunder.ttf") format("truetype");
+  }
 }
 
 .yahtzee-bg {

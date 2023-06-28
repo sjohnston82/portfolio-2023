@@ -8,11 +8,14 @@ import SassBadgeImage from "../../../styles/assets/images/SassBadgeImage.png";
 import AWSBadgeImage from "../../../styles/assets/images/AWSBadgeImage.png";
 import MongoDBBadgeImage from "../../../styles/assets/images/MongoDBBadgeImage.svg";
 import NodejsBadgeImage from "../../../styles/assets/images/NodejsBadgeImage.png";
-import VueBadgeImage from "../../../styles/assets/images/VueBadgeImage.png";
 import CSSBadgeImage from "../../../styles/assets/images/CSSBadgeImage.png";
-import DjangoBadgeImage from "../../../styles/assets/images/DjangoBadgeImage.png";
-import PythonBadgeImage from "../../../styles/assets/images/PythonBadgeImage.png";
 import SocketioBadgeImageDark from "../../../styles/assets/images/SocketIoBadgeImageDark.png";
+import ReactEmailBadgeImage from '../../../styles/assets/images/ReactEmailBadgeImage.png';
+import NextjsBadgeImage from '../../../styles/assets/images/NextjsBadgeImage.png';
+import TrpcBadgeImage from '../../../styles/assets/images/TrpcBadgeImage.svg';
+import TypescriptBadgeImage from '../../../styles/assets/images/TypescriptBadgeImage.png';
+import PrismaBadgeImage from '../../../styles/assets/images/PrismaBadgeImage.png';
+import TailwindBadgeImage from '../../../styles/assets/images/TailwindBadgeImage.png';
 
 interface TechList {
   title: string;
@@ -35,12 +38,12 @@ const TechUsed = () => {
   ];
 
   const techListQuarterMaster = [
-    { title: "JavaScript", image: JavascriptBadgeImage, id: 1 },
-    { title: "Vue", image: VueBadgeImage, id: 2 },
-    { title: "CSS", image: CSSBadgeImage, id: 3 },
-    { title: "Django", image: DjangoBadgeImage, id: 4 },
-    { title: "MongoDB", image: MongoDBBadgeImage, id: 5 },
-    { title: "Python", image: PythonBadgeImage, id: 6 },
+    { title: "TypeScript", image: TypescriptBadgeImage, id: 1 },
+    { title: "NextJS", image: NextjsBadgeImage, id: 2 },
+    { title: "trpc", image: TrpcBadgeImage, id: 3 },
+    { title: "Prisma", image: PrismaBadgeImage, id: 4 },
+    { title: "Tailwind", image: TailwindBadgeImage, id: 5 },
+    { title: "React-Email", image: ReactEmailBadgeImage, id: 6 },
   ];
 
   const techListYahtzee = [

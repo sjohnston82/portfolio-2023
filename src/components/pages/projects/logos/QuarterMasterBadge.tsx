@@ -1,19 +1,18 @@
-import React from 'react'
-import QuarterMasterLogo from '../../../../styles/assets/images/QuarterMasterLogo.png'
+import React from "react";
 
 const QuarterMasterBadge = () => {
   return (
-    <div className="m-auto min-h-[228px] 2xl:w-4/5 w-2/3 rounded-xl bg-quartermaster md:w-1/2">
+    <div className="w-2/ m-auto min-h-[228px] rounded-xl bg-[#121212] p-4 md:w-1/2 2xl:w-4/5">
       <img
-        src={QuarterMasterLogo}
+        src="https://res.cloudinary.com/dxgmhaz8i/image/upload/v1687864635/forkspoondarkfix2_vtzqvz.png"
         alt="QuarterMaster Logo"
         className="m-auto  w-4/5 md:w-1/2"
       />
-      <p className="mt-5 text-center font-alegreya text-3xl font-bold normal-case italic text-black sm:pb-5 sm:text-[36px]">
-        QuarterMaster
+      <p className="mt-5 text-center font-ALoveofThunder text-3xl font-bold normal-case italic text-slate-300 sm:pb-5 sm:text-[36px]">
+        Quartermaster
       </p>
     </div>
   );
-}
+};
 
-export default QuarterMasterBadge
+export default QuarterMasterBadge;

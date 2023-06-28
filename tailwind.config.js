@@ -56,6 +56,7 @@ module.exports = {
         robotoslab: ["Roboto Slab"],
         ibmplexsans: ["IBM Plex Sans", "sans-serif"],
         notosans: ["Noto Sans", "sans-serif"],
+        ALoveofThunder: ["ALoveofThunder"],
       },
       screens: {
         xs: "550px",

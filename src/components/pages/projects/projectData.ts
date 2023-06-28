@@ -37,11 +37,11 @@ export const quarterMasterData: Project = {
   tagline:
     "QuarterMaster is a pantry inventory application to help you keep track of the food in your pantry.",
   features: [
-    "Add all the food in your pantry so you're up-to-date on what you already have at home while you're out.",
-    "Keep track of food expiration dates so you know when the things that get pushed to back of the pantry are ready to be thrown out.",
-    "Add items to a grocery list to make shopping easy.",
-    "Uses the spoonacular API to generate images for food items that are added.",
+    "Use your phone's camera to easily scan bar codes to add your pantry items",
+    "Add all the members of your family to your household group so you can all stay up-to-date",
+    "Add items to a grocery list and share it with all the members of your family",
+    "Keep track of expiration dates to easily to reduce food waste",
   ],
-  projectLink: "https://quartermaster.pythonanywhere.com/",
-  codeLink: "https://github.com/sjohnston82/quartermaster/",
+  projectLink: "https://www.quarter-master.net/",
+  codeLink: "https://github.com/sjohnston82/quarter-master2",
 };

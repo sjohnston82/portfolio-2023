@@ -116,7 +116,7 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
                   Front-End techs I love to work with currently are:
                 </p>
                 <p className="text-center text-celticblue">
-                  React, Sass <span className="text-black">&</span>{" "}
+                  NextJs, Sass <span className="text-black">&</span>{" "}
                   Tailwind
                 </p>
               </div>
@@ -124,11 +124,11 @@ const SkillSection = ({ category, setCategory }: SkillSectionProps) => {
             {category === "backend" && (
               <div className="">
                 <p className="text-center text-sm sm:text-base">
-                  Back-End I love to work with currently are:
+                  Back-End techs I love to work with currently are:
                 </p>
                 <p className="text-center text-celticblue">
-                  Nodejs, Express <span className="text-black">&</span>{" "}
-                  MongoDB
+                  Nodejs, Trpc <span className="text-black">&</span>{" "}
+                  Prisma
                 </p>
               </div>
             )}

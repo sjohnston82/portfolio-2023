@@ -9,6 +9,7 @@ import ReactBadgeImage from "../../../styles/assets/images/ReactBadgeImage.png";
 import SassBadgeImage from "../../../styles/assets/images/SassBadgeImage.png";
 import VueBadgeImage from "../../../styles/assets/images/VueBadgeImage.png";
 import TailwindBadgeImage from "../../../styles/assets/images/TailwindBadgeImage.png";
+import NextjsBadgeImage from "../../../styles/assets/images/NextjsBadgeImage.png";
 
 import GitBadgeImage from "../../../styles/assets/images/GitBadgeImage.jpg";
 import ResponsiveDesignBadgeImage from "../../../styles/assets/images/ResponsiveDesignBadgeImage.png";
@@ -18,8 +19,8 @@ import VeteranBadgeImage from "../../../styles/assets/images/VeteranBadgeImage.p
 import ExpressBadgeImage from "../../../styles/assets/images/ExpressBadgeImage.jpg";
 import MongoDBBadgeImage from "../../../styles/assets/images/MongoDBBadgeImage.svg";
 import NodejsBadgeImage from "../../../styles/assets/images/NodejsBadgeImage.png";
-import SocketioBadgeImage from "../../../styles/assets/images/SocketioBadgeImage.png";
-import DjangoBadgeImage from "../../../styles/assets/images/DjangoBadgeImage.png";
+import PrismaBadgeImage from "../../../styles/assets/images/PrismaBadgeImage.png";
+import TrpcBadgeImage from "../../../styles/assets/images/TrpcBadgeImage.svg";
 import RESTAPIBadgeImage from "../../../styles/assets/images/RESTAPIBadgeImage.png";
 
 export interface SkillGroup {
@@ -72,6 +73,7 @@ export const allFrontEnd: SkillGroup[] = [
     image: TailwindBadgeImage,
     title: "Tailwind",
   },
+  { image: NextjsBadgeImage, title: "NextJs" },
 ];
 
 export const allBackEnd: SkillGroup[] = [
@@ -88,12 +90,12 @@ export const allBackEnd: SkillGroup[] = [
     title: "Nodejs",
   },
   {
-    image: SocketioBadgeImage,
-    title: "Socketio",
+    image: PrismaBadgeImage,
+    title: "Prisma",
   },
   {
-    image: DjangoBadgeImage,
-    title: "Django",
+    image: TrpcBadgeImage,
+    title: "trpc",
   },
   {
     image: RESTAPIBadgeImage,
@@ -129,6 +131,6 @@ export const thingsILove: SkillGroup[] = [
   },
   {
     image: ReactBadgeImage,
-    title: "React"
+    title: "React",
   },
-]
+];
