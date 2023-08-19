@@ -1,4 +1,5 @@
 import React from "react";
+import { cn } from "../../../../lib/utils";
 
 interface ProjectSelectProps {
   project: number;
@@ -8,42 +9,63 @@ interface ProjectSelectProps {
 const ProjectSelectBar = ({ project, setProject }: ProjectSelectProps) => {
   return (
     <div
-      className="m-auto flex w-full justify-center rounded-md shadow-sm "
+      className="m-auto flex w-full flex-wrap justify-center gap-4 rounded-md px-2 pb-2 shadow-sm"
       role="group"
     >
       <button
+        className={cn(
+          "rounded-xl border border-gray-900 bg-white px-3 py-2 font-semibold text-gray-900 shadow shadow-gray-900 hover:bg-celticblue hover:text-white",
+          {
+            "bg-celticblue text-white": project === 5,
+          }
+        )}
+        onClick={() => setProject(5)}
+      >
+        Freelance
+      </button>
+      <button
+        className={cn(
+          "rounded-xl border border-gray-900 bg-white px-3 py-2 font-semibold text-gray-900 shadow shadow-gray-900 hover:bg-celticblue hover:text-white",
+          {
+            "bg-celticblue text-white": project === 1,
+          }
+        )}
         onClick={() => setProject(1)}
-        className={
-          project === 1
-            ? "rounded-l-lg border  border-gray-900 bg-celticblue px-4 py-2 text-sm font-medium text-white hover:bg-celticblue hover:text-white focus:z-10 focus:bg-celticblue focus:text-white focus:ring-gray-500 dark:border-white  dark:bg-celticblue dark:text-white xs:text-base sm:text-xl lxl:text-2xl "
-            : "rounded-l-lg border border-gray-900 bg-stone-50 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-celticblue hover:text-white focus:z-10 focus:bg-celticblue focus:text-white focus:ring-gray-500 dark:border-white  dark:bg-projectnavdark dark:text-white dark:hover:bg-projectdark dark:hover:text-white dark:focus:bg-projectnavdark xs:text-base sm:text-xl lxl:text-2xl"
-        }
-        type="button"
       >
         JobTracker
       </button>
-
       <button
-        className={
-          project === 2
-            ? "border-t border-b border-gray-900 bg-celticblue px-4 py-2 text-sm font-medium text-white hover:bg-celticblue hover:text-white focus:z-10 focus:bg-celticblue focus:text-white focus:ring-gray-500 dark:border-white  dark:bg-celticblue xs:text-base sm:text-xl lxl:text-2xl"
-            : "border-t border-b border-gray-900 bg-stone-50 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-celticblue hover:text-white focus:z-10 focus:bg-celticblue focus:text-white focus:ring-gray-500 dark:border-white  dark:bg-projectnavdark dark:text-white dark:hover:bg-projectdark dark:hover:text-white dark:focus:bg-projectnavdark xs:text-base sm:text-xl lxl:text-2xl "
-        }
-        type="button"
+        className={cn(
+          "rounded-xl border border-gray-900 bg-white px-3 py-2 font-semibold text-gray-900 shadow shadow-gray-900 hover:bg-celticblue hover:text-white",
+          {
+            "bg-celticblue text-white": project === 2,
+          }
+        )}
         onClick={() => setProject(2)}
       >
         Yahtzee
       </button>
       <button
-        className={
-          project === 3
-            ? "rounded-r-md border border-gray-900 bg-celticblue px-4 py-2 text-sm font-medium text-white hover:bg-celticblue hover:text-white focus:z-10 focus:bg-celticblue focus:text-white focus:ring-gray-500 dark:border-white  dark:bg-celticblue xs:text-base sm:text-xl lxl:text-2xl"
-            : "rounded-r-md border border-gray-900 bg-stone-50 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-celticblue hover:text-white focus:z-10 focus:bg-celticblue focus:text-white focus:ring-gray-500 dark:border-white  dark:bg-projectnavdark dark:text-white dark:hover:bg-projectdark dark:hover:text-white dark:focus:bg-projectnavdark xs:text-base sm:text-xl lxl:text-2xl"
-        }
-        type="button"
+        className={cn(
+          "rounded-xl border border-gray-900 bg-white px-3 py-2 font-semibold text-gray-900 shadow shadow-gray-900 hover:bg-celticblue hover:text-white",
+          {
+            "bg-celticblue text-white": project === 3,
+          }
+        )}
         onClick={() => setProject(3)}
       >
-        QuarterMaster
+        Quartermaster
+      </button>
+      <button
+        className={cn(
+          "rounded-xl border border-gray-900 bg-white px-3 py-2 font-semibold text-gray-900 shadow shadow-gray-900 hover:bg-celticblue hover:text-white",
+          {
+            "bg-celticblue text-white": project === 4,
+          }
+        )}
+        onClick={() => setProject(4)}
+      >
+        Frontend Mentor
       </button>
     </div>
   );

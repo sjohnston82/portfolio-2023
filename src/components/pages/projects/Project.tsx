@@ -10,6 +10,8 @@ import YahtzeeBadge from "./logos/YahtzeeBadge";
 
 import { jobTrackerData, yahtzeeData, quarterMasterData } from "./projectData";
 import TechUsed from "./TechUsed";
+import FrontendMentor from "./FrontendMentor";
+import Freelance from "./Freelance";
 
 const Project = () => {
   const context = useContext(PortfolioContext);
@@ -17,6 +19,8 @@ const Project = () => {
   const { project } = context;
 
   return (
+    project === 5 ? <Freelance /> :
+    project === 4 ? <FrontendMentor /> :
     <motion.div
       variants={pageTransitionSideVariants}
       initial="enter"
@@ -26,7 +30,7 @@ const Project = () => {
         x: { type: "spring", stiffness: 300, damping: 30 },
         opacity: { duration: 0.5 },
       }}
-      className="bg-seagreen pt-10 dark:bg-projectdark 2xl:flex"
+      className="bg-projectdark pt-10 dark:bg-projectdark 2xl:flex dark text-zinc-50 lxl:px-32"
       id="jobtracker"
     >
       <div className="">
@@ -42,7 +46,7 @@ const Project = () => {
               )}
             </div>
             <div className="">
-              <p className="font-['Titillium Web'] m-auto  mt-5 w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-gray-200 px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2 xl:text-2xl 2xl:w-4/5 ">
+              <p className="font-['Titillium Web'] m-auto  mt-5 w-4/5 rounded-tr-xl  border-l-2 border-jobtracker bg-jobtrackeraccentdark px-3 py-2 font-semibold shadow dark:bg-jobtrackeraccentdark lg:w-2/3 xl:mt-16 xl:mb-10 xl:w-1/2 xl:text-2xl 2xl:w-4/5 ">
                 {project === 1
                   ? jobTrackerData.tagline
                   : project === 2
@@ -63,8 +67,8 @@ const Project = () => {
               <p
                 className={
                   project === 2
-                    ? "m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl "
-                    : "m-auto my-3 w-[8ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl"
+                    ? "m-auto my-3 w-[8ch] border-b-2 border-jobtrackeraccentdark text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl "
+                    : "m-auto my-3 w-[8ch] border-b-2 border-jobtrackeraccentdark text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl"
                 }
               >
                 Features
@@ -72,8 +76,8 @@ const Project = () => {
               <ul
                 className={
                   project === 2
-                    ? "m-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4 2xl:pb-10"
-                    : "m-auto w-3/4 list-disc  marker:text-jobtracker dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4 "
+                    ? "m-auto w-3/4 list-disc  marker:text-jobtrackeraccentdark dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4 2xl:pb-10"
+                    : "m-auto w-3/4 list-disc  marker:text-jobtrackeraccentdark dark:marker:text-jobtrackeraccentdark lg:w-2/3 xl:w-3/4 "
                 }
               >
                 {project === 1

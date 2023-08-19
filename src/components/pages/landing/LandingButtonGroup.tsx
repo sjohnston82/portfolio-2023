@@ -1,11 +1,11 @@
-
 import SocialMediaButtonGroup from "../../layout/SocialMediaButtonGroup";
+import sjohnstonresume from "../../../styles/assets/sjohnstonresume.pdf";
 
 const LandingButtonGroup = () => {
   return (
     <div className="mt-4 flex flex-col items-center justify-center gap-5 font-ibmplexsans font-semibold xl:mt-0 ">
       <a
-        href="https://res.cloudinary.com/sjohnston82/image/upload/v1670276349/u9bipgajsof2jw79tv4c.pdf"
+        href={sjohnstonresume}
         target="_blank"
         rel="noopener noreferrer"
         className="flex w-1/2 justify-center"

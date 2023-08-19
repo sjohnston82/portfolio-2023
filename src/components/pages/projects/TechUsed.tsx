@@ -59,7 +59,7 @@ const TechUsed = () => {
     "m-2 flex flex-col rounded border bg-stone-50 p-1 shadow-lg dark:shadow-gray-900 shadow-gray-700 dark:bg-[#243B53] xxs:w-[15ch] ";
 
   return (
-    <div className="xl:w-1/2 2xl:w-full">
+    <div className="xl:w-2/3 2xl:w-full">
       <p className="m-auto my-3 w-[9ch] border-b-2 border-jobtracker text-center text-xl font-semibold dark:border-jobtrackeraccentdark 2xl:text-3xl">
         Tech Used
       </p>
@@ -72,7 +72,7 @@ const TechUsed = () => {
           duration: 0.5,
           y: { type: "spring", stiffness: 300, damping: 30 },
         }}
-        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-3 md:gap-5 xmd:grid-cols-6 xl:m-auto  xl:ml-auto  xl:flex xl:w-2/3 xl:items-center xl:justify-center xl:gap-5 2xl:grid 2xl:w-[90%] 2xl:grid-cols-6 2xl:gap-5"
+        className="m-auto flex w-4/5 flex-wrap justify-center text-xs xxs:grid xxs:grid-cols-3 xxs:place-items-center xxs:gap-0 md:grid-cols-3 md:gap-5 xmd:grid-cols-6 xl:m-auto  xl:ml-auto  xl:flex xl:flex-row xl:w-full xl:items-center xl:justify-center xl:gap-5 2xl:grid 2xl:w-[90%] 2xl:grid-cols-6 2xl:gap-5 :flex"
       >
         {project === 1
           ? techListJobTracker.map((tech) => {

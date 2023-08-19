@@ -12,7 +12,7 @@ const Projects = () => {
   const { project, setProject } = context;
 
   return (
-    <div className="relative bg-seagreen dark:bg-projectdark" id="projects">
+    <div className="relative bg-projectdark text-zinc-50 dark:bg-projectdark " id="projects">
       <div className="skill-divider-top ">
         <svg
           data-name="Layer 1"

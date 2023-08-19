@@ -37,7 +37,7 @@ const PortfolioContext = createContext<PortfolioContextInterface | null>(null);
 
 const PortfolioContextProvider = ({ children }: ChildrenProps) => {
   const [showingPage, setShowingPage] = useState("");
-  const [project, setProject] = useState<number>(1);
+  const [project, setProject] = useState<number>(5);
   const [showingGrid, setShowingGrid] = useState(true);
   const [showingInitialAnimation, setShowingInitialAnimation] = useState(true);
   const [windowSize, setWindowSize] = useState(getWindowSize());

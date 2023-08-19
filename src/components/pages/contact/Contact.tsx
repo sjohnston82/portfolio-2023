@@ -14,7 +14,7 @@ const Contact = () => {
         >
           <path
             d="M1200 0L0 0 598.97 114.72 1200 0z"
-            className="shape-fill  fill-seagreen dark:fill-projectdark"
+            className="shape-fill  fill-projectdark dark:fill-projectdark"
           ></path>
         </svg>
       </div>
