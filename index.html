@@ -521,6 +521,18 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .my-1{
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -553,6 +565,9 @@ video {
 }
 .mt-10{
   margin-top: 2.5rem;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 .mt-6{
   margin-top: 1.5rem;
@@ -650,14 +665,14 @@ video {
 .w-4\/5{
   width: 80%;
 }
-.w-\[8ch\]{
-  width: 8ch;
+.w-2\/3{
+  width: 66.666667%;
 }
 .w-3\/4{
   width: 75%;
 }
-.w-2\/3{
-  width: 66.666667%;
+.w-\[8ch\]{
+  width: 8ch;
 }
 .w-\[9ch\]{
   width: 9ch;
@@ -670,6 +685,9 @@ video {
 }
 .w-10{
   width: 2.5rem;
+}
+.max-w-\[400px\]{
+  max-width: 400px;
 }
 .flex-grow{
   flex-grow: 1;
@@ -703,6 +721,9 @@ video {
 .resize{
   resize: both;
 }
+.list-inside{
+  list-style-position: inside;
+}
 .list-disc{
   list-style-type: disc;
 }
@@ -730,6 +751,9 @@ video {
 .justify-center{
   justify-content: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
 .justify-around{
   justify-content: space-around;
 }
@@ -741,6 +765,9 @@ video {
 }
 .gap-2{
   gap: 0.5rem;
+}
+.gap-4{
+  gap: 1rem;
 }
 .gap-x-5{
   -moz-column-gap: 1.25rem;
@@ -778,19 +805,11 @@ video {
 .rounded-xl{
   border-radius: 0.75rem;
 }
-.rounded-md{
-  border-radius: 0.375rem;
-}
 .rounded-lg{
   border-radius: 0.5rem;
 }
-.rounded-l-lg{
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-.rounded-r-md{
-  border-top-right-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
+.rounded-md{
+  border-radius: 0.375rem;
 }
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
@@ -818,12 +837,17 @@ video {
 .border-b-2{
   border-bottom-width: 2px;
 }
-.border-t{
-  border-top-width: 1px;
+.border-celticblue{
+  --tw-border-opacity: 1;
+  border-color: rgb(34 108 224 / var(--tw-border-opacity));
 }
 .border-jobtracker{
   --tw-border-opacity: 1;
   border-color: rgb(33 33 33 / var(--tw-border-opacity));
+}
+.border-jobtrackeraccentdark{
+  --tw-border-opacity: 1;
+  border-color: rgb(98 125 152 / var(--tw-border-opacity));
 }
 .border-gray-900{
   --tw-border-opacity: 1;
@@ -880,13 +904,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
-.bg-seagreen{
+.bg-jobtrackeraccentdark{
   --tw-bg-opacity: 1;
-  background-color: rgb(93 253 203 / var(--tw-bg-opacity));
+  background-color: rgb(98 125 152 / var(--tw-bg-opacity));
 }
-.bg-gray-200{
+.bg-projectdark{
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(16 42 67 / var(--tw-bg-opacity));
 }
 .bg-gray-400{
   --tw-bg-opacity: 1;
@@ -926,8 +950,8 @@ video {
 .fill-black{
   fill: #000;
 }
-.fill-seagreen{
-  fill: #5DFDCB;
+.fill-projectdark{
+  fill: #102A43;
 }
 .fill-maximumblue{
   fill: #42BFDD;
@@ -965,6 +989,30 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -982,17 +1030,23 @@ video {
 .pt-10{
   padding-top: 2.5rem;
 }
+.pt-4{
+  padding-top: 1rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
+}
 .pt-12{
   padding-top: 3rem;
 }
 .pb-6{
   padding-bottom: 1.5rem;
 }
-.pt-1{
-  padding-top: 0.25rem;
-}
 .pb-2{
   padding-bottom: 0.5rem;
+}
+.pt-1{
+  padding-top: 0.25rem;
 }
 .text-center{
   text-align: center;
@@ -1053,14 +1107,11 @@ video {
 .font-semibold{
   font-weight: 600;
 }
-.font-medium{
-  font-weight: 500;
+.font-bold{
+  font-weight: 700;
 }
 .font-light{
   font-weight: 300;
-}
-.font-bold{
-  font-weight: 700;
 }
 .uppercase{
   text-transform: uppercase;
@@ -1099,6 +1150,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.text-zinc-50{
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity));
+}
 .text-stone-50{
   --tw-text-opacity: 1;
   color: rgb(250 250 249 / var(--tw-text-opacity));
@@ -1110,6 +1169,9 @@ video {
 .text-slate-300{
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+.underline{
+  text-decoration-line: underline;
 }
 .opacity-60{
   opacity: 0.6;
@@ -1149,6 +1211,10 @@ video {
 }
 .shadow-black{
   --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-gray-900{
+  --tw-shadow-color: #111827;
   --tw-shadow: var(--tw-shadow-colored);
 }
 .shadow-gray-700{
@@ -1212,11 +1278,11 @@ video {
   left: 0;
   right: 0;
 }
-.marker\:text-jobtracker *::marker{
-  color: rgb(33 33 33 );
+.marker\:text-jobtrackeraccentdark *::marker{
+  color: rgb(98 125 152 );
 }
-.marker\:text-jobtracker::marker{
-  color: rgb(33 33 33 );
+.marker\:text-jobtrackeraccentdark::marker{
+  color: rgb(98 125 152 );
 }
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
@@ -1251,6 +1317,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(34 108 224 / var(--tw-text-opacity));
 }
+.hover\:text-zinc-50:hover{
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity));
+}
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1271,21 +1341,6 @@ video {
   --tw-shadow-color: #374151;
   --tw-shadow: var(--tw-shadow-colored);
 }
-.focus\:z-10:focus{
-  z-index: 10;
-}
-.focus\:bg-celticblue:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 108 224 / var(--tw-bg-opacity));
-}
-.focus\:text-white:focus{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.focus\:ring-gray-500:focus{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(107 114 128 / var(--tw-ring-opacity));
-}
 .group:hover .group-hover\:fill-celticblue{
   fill: #226CE0;
 }
@@ -1298,10 +1353,6 @@ video {
 .dark .dark\:border-jobtrackeraccentdark{
   --tw-border-opacity: 1;
   border-color: rgb(98 125 152 / var(--tw-border-opacity));
-}
-.dark .dark\:border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .dark .dark\:bg-gray-800{
   --tw-bg-opacity: 1;
@@ -1334,14 +1385,6 @@ video {
 .dark .dark\:bg-jobtrackeraccentdark{
   --tw-bg-opacity: 1;
   background-color: rgb(98 125 152 / var(--tw-bg-opacity));
-}
-.dark .dark\:bg-celticblue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 108 224 / var(--tw-bg-opacity));
-}
-.dark .dark\:bg-projectnavdark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 78 104 / var(--tw-bg-opacity));
 }
 .dark .dark\:bg-\[\#243B53\]{
   --tw-bg-opacity: 1;
@@ -1393,10 +1436,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
-.dark .dark\:text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .dark .dark\:placeholder-gray-700::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(55 65 81 / var(--tw-placeholder-opacity));
@@ -1417,18 +1456,6 @@ video {
 }
 .dark .dark\:marker\:text-jobtrackeraccentdark::marker{
   color: rgb(98 125 152 );
-}
-.dark .dark\:hover\:bg-projectdark:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 42 67 / var(--tw-bg-opacity));
-}
-.dark .dark\:hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.dark .dark\:focus\:bg-projectnavdark:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 78 104 / var(--tw-bg-opacity));
 }
 @media (min-width: 450px){
   .xxs\:top-10{
@@ -1527,10 +1554,6 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-  .xs\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 @media (min-width: 640px){
   .sm\:left-0{
@@ -1547,6 +1570,10 @@ video {
   }
   .sm\:w-4\/5{
     width: 80%;
+  }
+  .sm\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .sm\:pb-5{
     padding-bottom: 1.25rem;
@@ -1618,6 +1645,10 @@ video {
   }
   .md\:gap-5{
     gap: 1.25rem;
+  }
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .md\:text-\[20px\]{
     font-size: 20px;
@@ -1692,6 +1723,10 @@ video {
   .lg\:left-64{
     left: 16rem;
   }
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .lg\:mt-5{
     margin-top: 1.25rem;
   }
@@ -1701,8 +1736,17 @@ video {
   .lg\:mb-20{
     margin-bottom: 5rem;
   }
+  .lg\:flex{
+    display: flex;
+  }
   .lg\:h-80{
     height: 20rem;
+  }
+  .lg\:h-\[264px\]{
+    height: 264px;
+  }
+  .lg\:h-\[234px\]{
+    height: 234px;
   }
   .lg\:h-56{
     height: 14rem;
@@ -1718,6 +1762,25 @@ video {
   }
   .lg\:w-56{
     width: 14rem;
+  }
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+  .lg\:flex-wrap{
+    flex-wrap: wrap;
+  }
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .lg\:pt-0{
+    padding-top: 0px;
   }
   .lg\:text-\[40px\]{
     font-size: 40px;
@@ -1764,6 +1827,10 @@ video {
   }
   .lxl\:gap-10{
     gap: 2.5rem;
+  }
+  .lxl\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
   .lxl\:text-3xl{
     font-size: 1.875rem;
@@ -1865,6 +1932,9 @@ video {
   .xl\:w-\[40\%\]{
     width: 40%;
   }
+  .xl\:flex-row{
+    flex-direction: row;
+  }
   .xl\:flex-col{
     flex-direction: column;
   }
@@ -1924,8 +1994,18 @@ video {
   }
 }
 @media (min-width: 1408px){
+  .xlx\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .xlx\:w-1\/3{
     width: 33.333333%;
+  }
+  .xlx\:w-1\/2{
+    width: 50%;
+  }
+  .xlx\:w-2\/3{
+    width: 66.666667%;
   }
 }
 @media (min-width: 1536px){
@@ -2005,8 +2085,8 @@ video {
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.5e65f377.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stephen Johnston Portfolio</title>
-    <script type="module" crossorigin src="/assets/index.1fa18419.js"></script>
-    <link rel="stylesheet" href="/assets/index.02751553.css">
+    <script type="module" crossorigin src="/assets/index.24f68192.js"></script>
+    <link rel="stylesheet" href="/assets/index.b964b5cc.css">
   </head>
   <body>
     <div id="root"></div>
