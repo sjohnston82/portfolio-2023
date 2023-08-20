@@ -1,6 +1,7 @@
 import React from "react";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 import { pageTransitionSideVariants } from "../../helpers/animations/variants";
+import KruegerandCoImage from "../../../styles/assets/images/kruegerandco-desktop.webp";
 
 const Freelance = () => {
   return (
@@ -17,7 +18,7 @@ const Freelance = () => {
     >
       {/* <h1 className="py-6 text-center text-3xl">Freelance Work</h1> */}
       <div className="">
-        <h2 className="text-center text-xl xl:text-2xl font-semibold">
+        <h2 className="text-center text-xl font-semibold xl:text-2xl">
           Krueger & Co., LLC.
         </h2>
         <p className="text-center text-sm italic">July 2023 - August 2023</p>
@@ -31,15 +32,15 @@ const Freelance = () => {
           </a>
         </p>
         <img
-          src="src/styles/assets/images/freelance/kruegerandco-desktop.webp"
+          src={KruegerandCoImage}
           alt="Krueger and Co Landing Page"
-          className="px-4 mx-auto"
+          className="mx-auto px-4"
         />
-        <p className="px-4 py-4 lg:w-2/3 lg:mx-auto xlx:w-1/2">
+        <p className="px-4 py-4 lg:mx-auto lg:w-2/3 xlx:w-1/2">
           Designed, developed and deployed website for Krueger & Co., LLC, a
           home improvement and renovations company based out of Fenton, MI.{" "}
         </p>
-        <section className="lg:flex xlx:w-2/3 xlx:mx-auto">
+        <section className="lg:flex xlx:mx-auto xlx:w-2/3">
           <div className="lg:flex lg:w-1/2 lg:flex-col lg:justify-start ">
             <h3 className="text-center text-lg font-semibold underline">
               Features
@@ -56,7 +57,7 @@ const Freelance = () => {
             </ul>
           </div>
           <div className="lg:flex lg:w-1/2 lg:flex-col lg:justify-start ">
-            <h2 className="pt-4 lg:pt-0 text-center text-lg font-semibold underline">
+            <h2 className="pt-4 text-center text-lg font-semibold underline lg:pt-0">
               Tech Stack
             </h2>
             <ul className="mx-auto w-2/3 list-inside list-disc">

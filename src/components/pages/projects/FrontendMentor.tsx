@@ -18,7 +18,7 @@ const FrontendMentor = () => {
       className="w-full py-16 lg:px-20"
     >
       <h1 className="text-center text-3xl pb-8">Frontend Mentor Challenges</h1>
-      <h3 className="mx-auto w-3/4 text-center">
+      <h3 className="mx-auto w-3/4 text-center xl:w-1/2 pb-8">
         Frontend Mentor is a site for solving front-end challenges to build projects in a
         real-life workflow, using whichever tools you like. Each challenge is
         styled for 375px and 1440px.
