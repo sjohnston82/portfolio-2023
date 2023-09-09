@@ -3,6 +3,7 @@ import NewsHomepageImage from "../../../styles/assets/images/news-homepage.webp"
 import AgeCalculatorImage from "../../../styles/assets/images/agecalculator.webp";
 import ResultSummaryImage from "../../../styles/assets/images/result-summary-component.webp";
 import NewsletterSignupImage from "../../../styles/assets/images/newsletter-signup.webp";
+import NotificationPageImage from "../../../styles/assets/images/notification-page.webp";
 
 type Challenge = {
   title: string;
@@ -72,5 +73,14 @@ export const challengeData = [
     solutionUrl: "https://github.com/sjohnston82/result-summary-component",
     liveUrl: "https://splendid-entremet-89b9fc.netlify.app/",
     techUsed: ["NextJs", "HTML", "TailwindCSS", "Typescript"],
+  },
+  {
+    title: "Notification Page",
+    description:
+      "This challenge is a notifications page where you need to track the status of unread notifications and correctly mark them all as read, as well as deal with several types of different notifications.",
+    image: NotificationPageImage,
+    solutionUrl: "https://github.com/sjohnston82/notifications-page",
+    liveUrl: "https://ephemeral-melba-57af98.netlify.app/",
+    techUsed: ["Astro", "React", "TailwindCSS", "Typescript"],
   },
 ];
