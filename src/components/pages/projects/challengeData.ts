@@ -4,6 +4,7 @@ import AgeCalculatorImage from "../../../styles/assets/images/agecalculator.webp
 import ResultSummaryImage from "../../../styles/assets/images/result-summary-component.webp";
 import NewsletterSignupImage from "../../../styles/assets/images/newsletter-signup.webp";
 import NotificationPageImage from "../../../styles/assets/images/notification-page.webp";
+import InteractiveCardDetailsImage from "../../../styles/assets/images/interactive-card-details.webp";
 
 type Challenge = {
   title: string;
@@ -82,5 +83,21 @@ export const challengeData = [
     solutionUrl: "https://github.com/sjohnston82/notifications-page",
     liveUrl: "https://ephemeral-melba-57af98.netlify.app/",
     techUsed: ["Astro", "React", "TailwindCSS", "Typescript"],
+  },
+  {
+    title: "Interactive Card Details Form",
+    description:
+      "This is an interactive credit card details input form that shows the information entered on the images of the cards.  It requires validation and formatting of the input.",
+    image: InteractiveCardDetailsImage,
+    solutionUrl: "https://github.com/sjohnston82/interactive-card-details",
+    liveUrl: "https://astonishing-crepe-d92c03.netlify.app/",
+    techUsed: [
+      "NextJs",
+      "React",
+      "TailwindCSS",
+      "Typescript",
+      "React-hook-form",
+      "Zod",
+    ],
   },
 ];
