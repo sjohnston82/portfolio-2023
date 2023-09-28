@@ -5,6 +5,7 @@ import ResultSummaryImage from "../../../styles/assets/images/result-summary-com
 import NewsletterSignupImage from "../../../styles/assets/images/newsletter-signup.webp";
 import NotificationPageImage from "../../../styles/assets/images/notification-page.webp";
 import InteractiveCardDetailsImage from "../../../styles/assets/images/interactive-card-details.webp";
+import ExpensesChartComponentImage from "../../../styles/assets/images/expenses-chart-component.webp";
 
 type Challenge = {
   title: string;
@@ -98,6 +99,22 @@ export const challengeData = [
       "Typescript",
       "React-hook-form",
       "Zod",
+    ],
+  },
+  {
+    title: "Expenses Chart Component",
+    description:
+      "This challenge involved importing expense data from a JSON file and dynamically rendering it in a bar chart.  I ended up using NextJS, TypeScript and ChartJS for data visualization.",
+    image: ExpensesChartComponentImage,
+    solutionUrl: "https://github.com/sjohnston82/expenses-chart-component",
+    liveUrl: "https://brilliant-sunshine-87d7aa.netlify.app/",
+    techUsed: [
+      "NextJs",
+      "React",
+      "TailwindCSS",
+      "Typescript",
+      "ChartJS",
+      "JSON",
     ],
   },
 ];
